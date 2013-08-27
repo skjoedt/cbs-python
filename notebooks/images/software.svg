@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="aim.svg">
+   sodipodi:docname="software.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.28"
      inkscape:cx="102.7875"
-     inkscape:cy="78.805831"
+     inkscape:cy="141.30583"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -34,9 +34,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1869"
-     inkscape:window-height="1056"
-     inkscape:window-x="1651"
+     inkscape:window-width="1549"
+     inkscape:window-height="876"
+     inkscape:window-x="51"
      inkscape:window-y="24"
      inkscape:window-maximized="1">
     <inkscape:grid
@@ -57,7 +57,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -96,5 +96,38 @@
          id="tspan2989-4"
          x="160"
          y="282.36218" /></text>
-  </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3027"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(100.46875,91.126442)"><flowRegion
+         id="flowRegion3029"><rect
+           id="rect3031"
+           width="480"
+           height="193.93945"
+           x="19.53125"
+           y="47.29628" /></flowRegion><flowPara
+         id="flowPara3033" /><flowPara
+         id="flowPara3035" /><flowPara
+         id="flowPara3049">Linux or MAC OSX is a <flowSpan
+   style="font-weight:bold"
+   id="flowSpan3063">great advantage</flowSpan>. Windows will work.</flowPara><flowPara
+         id="flowPara3051">Python 2.7.5</flowPara><flowPara
+         id="flowPara3053"
+         style="font-style:italic">        extra modules: mathlib, numpy, pandas</flowPara><flowPara
+         id="flowPara3059">IPython 1.0</flowPara><flowPara
+         id="flowPara3116"
+         style="font-style:italic">        extra modules: tornado, pyzmq, jinja2</flowPara><flowPara
+         id="flowPara3047"></flowPara><flowPara
+         id="flowPara3118">Instructions for setting up everything is found in the Installation notebook.       </flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3069"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:14px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion3071"><rect
+           id="rect3073"
+           width="21.09375"
+           height="25"
+           x="225.78125"
+           y="165.26503" /></flowRegion><flowPara
+         id="flowPara3075"></flowPara></flowRoot>  </g>
 </svg>

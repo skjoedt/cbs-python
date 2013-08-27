@@ -175,6 +175,14 @@
 		padding-top: 35px;
 	}
 
+	.c_program{
+		background: url('files/images/program.png') no-repeat scroll 0% 0%; width: 520px; margin-left: auto; margin-right: auto;
+	}
+
+	.c_require{
+		background: url('files/images/software.png') no-repeat scroll 0% 0%; width: 520px; height: 250px; margin-left: auto; margin-right: auto;
+	}
+
 </style>
 <script>
     MathJax.Hub.Config({
