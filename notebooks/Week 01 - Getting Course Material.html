@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>[]</title>
+<title>Getting Course Material</title>
 <style type="text/css">
     .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
 .clearfix:after{clear:both;}
@@ -1699,9 +1699,6 @@ init_mathjax();
 Short version:
 <ol>
     <li>
-Sign up with GitHub at https://github.com/
-</li>
-    <li>
 Install git on linux/Mac or the <a href="http://http://windows.github.com/">github tool</a> on Windows
 </li>
     <li>
@@ -1715,12 +1712,12 @@ Link your Ipython Notebook to this folder
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="lecture-notes">Lecture Notes</h3>
-<p>During the course I will be using notebooks for lecture notes. A preview is shown below. The idea is that you can get these lecture notes and you can make your own notes on top of them if you want using Ipython Notebook that should be installed on your computer (see ealier instructions).</p>
+<p>During the course I will be using notebooks for lecture notes. A preview is shown below. The idea is that you can get these lecture notes and you can make your own notes on top of them if you want using IPython Notebook. The instructions for setting up IPython will follow in the first lecture.</p>
 <img src="images/notebook_ex.png" width="800px" />
 <h3 id="exercises">Exercises</h3>
-<p>Some exercises will also be made in the notebook, with explaining text and figures encapsulating code blocks that are either partially filled out or empty. The exercise will be for you to fill out these code blocks or missing pieces for the problems to be solved. Some exercises will involve loading data from files that should be put in the correct directories relative to the exercises.</p>
+<p>Some exercises will also be made in notebooks with explaining text and figures encapsulating code blocks that are either partially filled out or empty. The exercise will be for you to fill out these code blocks for the problems to be solved. Some exercises will involve loading data from files that should be put in the correct directories relative to the exercises. Because this is a pilot course still under development, some of the exercise material will be made available during the semester.</p>
 <h2 id="getting-the-latest-versions-of-lecture-notes-and-exercises">Getting the latest versions of lecture notes and exercises</h2>
-<p>Since this course is still under development lecture notes and exercises are expected to be updated during the semester. To avoid any problems with missing data files or outdated notes I have set up a github repository, which is nothing more than a online folder that you can syncronize to. This way you start each lecture with updating your local files with any changes that might have been made.</p>
+<p>Since the course is still under development lecture notes and exercises are expected to be updated during the semester. To avoid any problems with missing data files or outdated notes I have set up a github repository, which is nothing more than a online folder that you can syncronize to. This way you start each lecture with updating your local files with any changes that might have been made.</p>
 <p>To do all this as painless as possible we should start out by setting everything up for the rest of the course.</p>
 <h2 id="installing-git">Installing git</h2>
 This guide include instructions for
@@ -1738,7 +1735,7 @@ Windows
 
 <p>Go to the section that covers your system.</p>
 <h3 id="mac">MAC</h3>
-<p>All you need is git. Go to http://git-scm.com/download/mac and downlaod the dmg installation file. Once downloaded open it and open the git installer inside. Follow the instructions for installing git.</p>
+<p>All you need is git. Go to http://git-scm.com/download/mac and downlaod the dmg installation file. Once downloaded, open it and open the git installer inside. Follow the instructions for installing git.</p>
 <p>Once installed open a terminal and navigate to the document folder where you want the course material to be downloaded, eg.</p>
 <p><cb>cd /Users/christian/Documents/courses/</cb></p>
 <p>now clone the cbs-python github</p>
@@ -1789,7 +1786,7 @@ Windows
 <p>To update the local files open the github shell <img src="images/gitshell.png" /> and navigate to the cbs-python directory:</p>
 <p><cb>cd cbs-python</cb></p>
 <p>Now run these two commands to update your local files:</p>
-<p><cb>git checkout -f master</cb><br /> and <cb>git pull origin master</cb><br /><br  /></p>
+<p><cb>git checkout -f master</cb><br /> and<br /> <cb>git pull origin master</cb><br /><br  /></p>
 <center>
 <img src="images/gitshell_upd.png" width="500px" />
 </center>
@@ -1800,28 +1797,9 @@ Windows
 <div class="prompt input_prompt">
 In&nbsp;[1]:
 </div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-
-
-<span class="k">def</span> <span class="nf">css_styling</span><span class="p">():</span>
-    <span class="n">styles</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;../styles/custom.css&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">HTML</span><span class="p">(</span><span class="n">styles</span><span class="p">)</span>
-<span class="n">css_styling</span><span class="p">()</span>
-</pre></div>
 
 </div>
-</div>
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt output_prompt">
-    Out[1]:</div>
-<div class="box-flex1 output_subarea output_pyout">
-
-<div class="output_html rendered_html">
 <style>
     div.cell{
         width:800px;
@@ -2032,15 +2010,6 @@ In&nbsp;[1]:
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre>
-</pre></div>
 
 </div>
 </div>

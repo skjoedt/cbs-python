@@ -1697,7 +1697,7 @@ init_mathjax();
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="python-installation">PYTHON installation</h1>
 <hr />
-<img src="http://python.org/images/python-logo.gif" />
+<img src="http://python.org/images/python-logo.gif" /><br />
 In order to learn python programming we need the python language intepreter installed. Additionally we need some other resources, like ipython and a number of extra functionality for scientific research (don't worry, we will cover this later). First, you have to navigate down to the section describing the installation of python on your system:
 <ul>
     <li>
@@ -1722,70 +1722,79 @@ Linux
 <hr />
 <img src="http://ipython.org/ipython-doc/stable/_static/logo.png" height="40px">
 <p>IPython provides a rich toolkit to help you make the most out of using Python interactively. First of all it comes with a rich and powerful version of the orignial python prompt with a lot of interactive features that will become clearer later in the course.</p>
-<p>IPython also includes IPython Notebook which is a web-based python environment that is full of features. It offers a journal like perspective to your python coding and is very helpful for getting hands on python and will be used extensively in the first lectures. In fact this text was written in IPython Notebook.</p>
+<p>IPython also includes IPython Notebook which is a web-based python environment that is full of features. It offers a journal like perspective to your python coding and is very helpful for getting hands on python and will be used extensively in the first lectures. In fact, this text was written in IPython Notebook.</p>
 <p>Check out some of the stuffs that has been done in this journal like editor <a href="http://nbviewer.ipython.org/" target="_blank">here</a>.</p>
 <hr />
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="windows">Windows</h2>
 <h3 id="python">Python</h3>
-Windows doesn't come with python preinstalled. You need to download and install it:
+<p>Windows doesn't come with python preinstalled. The easiest way to get Python are through Pythonxy, which is a scientific-oriented Python Distribution, packaged with a number of scientific modules that we will use in the course.</p>
 <ol>
-    <li>
-Go to http://www.python.org/download/ and download the latest Python releases for Python2 for your system. Here are direct links to the recent ones:
+<li>
+Download pythonxy from <a href="http://pythonxy.connectmv.com/Python(x,y)-2.7.5.0.exe">this link.</a>
 </li>
-    <ul>
-        <li> 
-[<a href="http://www.python.org/ftp/python/2.7.5/python-2.7.5.msi">Python2 32-bit</a>]
+<li>
+Open the <code>Python(x,y)-2.7.5.0.exe</code> file that you just downloaded.
 </li>
-        <li> 
-[<a href="http://www.python.org/ftp/python/2.7.5/python-2.7.5.amd64.msi" target="_blank">Python2 64-bit</a>]
+<img src="images/pythonxy-2.png" />
+<li>
+Follow the installation instructions until you see this window
 </li>
-    </ul>
-    <li>
-Run the installer and follow the install wizard with default settings.
-</li>
-    <li>
-Once installed test the python program by running the shortcut <i> Python (command line) in start menu</i> and you should see something like this:
-</li>
-    
-<img src="images/py_install1.jpg"> <br> This is the python prompt that you can use to type in python commands. We will not be using this prompt directly in the course we but do need the python enterpreter behind it.
-</ol>
-
-<h3 id="ipython-and-extras">IPython and extras</h3>
-<p>Now that we have python set up on the computer we can use a small tool written in python to fetch the rest that we need.</p>
-<ol>
-    <li>
-First, download <a href="https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py" target="_blank">this script</a> to your desktop.
-</li>
-    <li>
-Run the script (double click) and a command line prompt will appear shortly. What the script does is unpacking an executable file <i>easy_install.exe</i> into your Python script folder.
-</li>
-    <li>
+<img src="images/pythonxy-3.png" />
+<h4>
+IPython
+</h4>
+<p>
+At this point we need to update the IPython that came with Pythonxy.
+</p>
+<li>
 Now open the run command by holding down <kbd><img id="wds" src="images/wds.png" height=10px></kbd> while pressing <kbd>R</kbd>.
 </li>
-    <li>
+<li>
 Type in <cb>cmd</cb> and hit Enter. This will open the command line prompt.
 </li>
-    <li>
+<li>
 Type in <cb>cd C:/Python27/Scripts</cb> to navigate to this folder.
 </li>
     <p>
 <b>(Note: Use backslash instead of slash in the path).</b>
 </p>
-    
-<img src="images/py_install2.jpg">
 <li>
-Now run the following commands to start installing the extra python modules that we need for the course:
+Now type in <cb>pip.exe install ipython --upgrade</cb> and hit enter. <img src="images/pythonxy-4.png" />
+<li>
+Now verify that you have the correct version of IPython using the <cb>ipython.exe --version</cb> command. If everything went OK you should see <cb>1.0.0</cb>:
 </li>
-    
-<cb>easy_install.exe mathlib</cb><br /> <cb>easy_install.exe numpy</cb><br /> <cb>easy_install.exe scipy</cb><br /> <cb>easy_install.exe pandas</cb><br /> <cb>easy_install.exe tornado</cb><br /> <cb>easy_install.exe pyzmq</cb><br /> <cb>easy_install.exe pip</cb><br />
+<img src="images/pythonxy-5.png" />
+<h4>
+Pyzmq (Important!)
+</h4>
+<p>
+Pyzmq is a network protocol needed for the Notebook. We need to install it manually.
+</p>
 <li>
-We will use pip to install IPython, since at this time easy_install does not contain the latest version. This is done by running:
+Download the pyzmq installer from <a href="https://github.com/downloads/zeromq/pyzmq/pyzmq-2.2.0.win32-py2.7.msi">this link</a>
 </li>
-    
-<cb>pip.exe install ipython</cb><br />
 <li>
+Open the file <code>pyzmq-2.2.0.win32-py2.7.msi</code> and follow the instructions for installing it.
+</li>
+<h4>
+BioPython
+</h4>
+<p>
+Another import module not supplied with the Pythonxy distribution is BioPython which we will use later in the course.
+</p>
+<li>
+Download the BioPython installer from <a href="http://biopython.org/DIST/biopython-1.62.win32-py2.7.exe">this link</a>.
+</li>
+<li>
+Open the <code>biopython-1.62.win32-py2.7.exe</code> file and follow the installation instructions.
+</li>
+<img src="images/pythonxy-6.png" />
+<h4>
+Setting up a Desktop Shortcut
+</h4>
+ <li>
 Now all we need is to create a shortcut to IPython Notebook. On your Desktop (or anywere you like) right click and select <em>New</em> and then <em>Shortcut</em>.
 </li>
     <li>
@@ -1801,7 +1810,14 @@ Run the program from the newly created shortcut and celebrate the success!
 </li>
     
 <img src="images/py_install4.jpg" width="700px">
+<h4>
+Done!
+</h4>
+
+<p>If you have any troubles setting up everything, please stop by my office 060 in building 208.</p>
 </ol>
+
+
 
 
 <hr />
@@ -1834,15 +1850,52 @@ Install Python2 by running either
     
 <cb>hdiutil mount python-2.7.5-macosx10.3.dmg</cb> for 32-bit, or<br /> <cb>hdiutil mount python-2.7.5-macosx10.6.dmg</cb> for 64-bit.<br/> and then, <br /> <cb>sudo installer -pkg &quot;/Volumes/Python 2.7.5/Python.mpkg&quot; -target /</cb>
 </ol>
-<h3 id="ipython-and-extras">IPython and extras</h3>
-<p>The program <i>easy_install</i> comes with python and can be used to install additional Python2 packages:</p>
+
+<h3 id="gcc-clang-or-xcode">GCC, Clang or XCode</h3>
+<p>For some of the scientific modules to work you need to install software to take care of C (another language).</p>
+<p><em>[ This will solve the CLang error of Pandas and BioPython installation]</em></p>
+<h4 id="if-you-already-installed-xcode">If you already installed XCode:</h4>
+<p>If you have manually installed XCode earlier, all you need to do is open XCode and hold down <kbd>Command</kbd> and press <kbd> , </kbd>. This will open up XCode preferences. Go to the Download tab at the top of the window and select &quot;Command Line Tools&quot; and click Install.</p>
+<img src="images/xcode.png" width="600px"/>
+<h4 id="if-you-dont-have-xcode-installed">If you don't have XCode installed:</h4>
+<ol>
+<li>
+Download GCC from the following link, depending on your system:
+</li>
 <ul>
-<cb>sudo easy_install numpy</cb><br /> <cb>sudo easy_install scipy</cb><br /> <cb>sudo easy_install pandas</cb><br /> <cb>sudo easy_install tornado</cb><br /> <cb>sudo easy_install pyzmq</cb><br /> <cb>sudo easy_install pip</cb><br />
+    <li>
+<a href="https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.7-v2.pkg">Installer for OSX 10.7+</a>
+</li>
+    <li>
+<a href="https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.6.pkg">Installer for OSX 10.6</a>
+</li>
+</ul>
+<li>
+Open the installer and follow the instructions
+</li>
+<img src="images/gcc-1.png" />
+<li>
+Once finished you should see this window
+</li>
+<img src="images/gcc-3.png" />
+</ol>
+
+<h3 id="ipython-and-extras">IPython and extras</h3>
+<p>The program <i>easy_install</i> comes with python and can be used to install additional Python2 packages. Open a terminal and type in:</p>
+<ul>
+<cb>sudo easy_install numpy</cb><br /> <cb>sudo easy_install tornado</cb><br /> <cb>sudo easy_install pyzmq</cb><br /> <cb>sudo easy_install pip</cb><br /> <cb>sudo easy_install biopython</cb><br /> <cb>sudo easy_install jinja2</cb><br />
 </ul>
 
 <p>Unfortunately easy_install does not contain the latest version of IPython that we will use in the course. Therefore use the newly installed <i>pip</i> to get it: <cb>sudo pip install ipython</cb><br /></p>
 <p>Now, if everything went okay you should be able to run <cb>ipython notebook</cb> and see the following window:</p>
 <img src="images/py_install5.jpg", width="700px">
+<p>To access the course material, you have to run the <cb>ipython notebook</cb> command from the notebook directory. Navigate to the <cb>notebook</cb> inside the course material directory using the <code>cd</code> command, eg:</p>
+<p><cb>cd ~/Documents/Courses/cbs-python/notebooks</cb></br></p>
+<p>Now open the notebook using</p>
+<p><cb>ipython notebook</cb><br /></p>
+<p>inside this directory and you should see the following window if everything works OK.</p>
+<img src="images/mac_notebook.png" width="800px" />
+<p>If you have any troubles setting up everything, please stop by my office 060 in building 208.</p>
 <hr />
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -1856,7 +1909,9 @@ Install Python2 by running either
 <p><cb>sudo yum install python-pandas python-matplotlib python-numpy python-pip python-zmq python-tornado</cb><br /><br /></p>
 <p>Now install IPython using pip: <br /></p>
 <p><cb>sudo pip install ipython</cb><br /><br /></p>
-<p>Now check that it works by running <cb>ipython notebook</cb> in your terminal. You should see the following browser window popping up:<br /> <img src="images/py_install6.jpg", width="700px"></p>
+<p>Now check that it works by running <cb>ipython notebook</cb> in your terminal. You should see the following browser window popping up:<br /></p>
+<img src="images/py_install6.jpg", width="700px">
+<p>To access the course material and exercises you have to run the <cb>ipython notebook</cb> command from the notebook directory.</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr />
